@@ -140,6 +140,10 @@ def main(args):
     elif args.method == 'gcn':
         assert args.label_file != ''
         assert args.feature_file != ''
+        ###testtest###
+        ###test#
+        ##t
+        #t
         g.read_node_label(args.label_file)
         g.read_node_features(args.feature_file)
         model = gcnAPI.GCN(graph=g, dropout=args.dropout,
